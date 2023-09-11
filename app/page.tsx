@@ -5,7 +5,7 @@ import twitch from "../public/assets/twitch.png";
 import twitter from "../public/assets/twitter.png";
 import youtube from "../public/assets/youtube.png";
 import instagram from "../public/assets/instagram.png";
-/* import facebook from "../public/assets/facebook.png"; */
+import facebook from "../public/assets/facebook.png";
 export default function Home() {
   return (
     <main className="bg-[#E7E7E7] flex flex-grow w-full justify-center items-center p-20  ">
@@ -27,23 +27,50 @@ export default function Home() {
           <h1 className="font-bold text-lg">Minhas Redes</h1>
           <div className="flex flex-col gap-3 w-full mt-3">
             <button className="border border-zinc-800 rounded-full p-1  flex gap-3 justify-center items-center ">
-              <Image src={youtube} alt="" className="w-[48px] h-[48px] " />{" "}
-              youtube
+              <a
+                href="https://www.youtube.com/channel/UCouir8xl16yzQ8wXow_hEDw"
+                className="flex justify-center items-center gap-2"
+              >
+                <Image src={youtube} alt="" className="w-[48px] h-[48px] " />{" "}
+                Youtube
+              </a>
             </button>
             <button className="border border-zinc-800 rounded-full p-1  flex gap-3 justify-center items-center ">
-              <Image src={twitch} alt="" className="w-[48px] h-[48px]" /> twitch
+              <a
+                href="https://www.twitch.tv/lozeerxd"
+                className="flex justify-center items-center gap-2"
+              >
+                <Image src={twitch} alt="" className="w-[48px] h-[48px]" />{" "}
+                Twitch
+              </a>
             </button>
             <button className="border border-zinc-800 rounded-full p-1  flex gap-3 justify-center items-center ">
-              <Image src={twitter} alt="" className="w-[48px] h-[48px]" />{" "}
-              twitter
+              <a
+                href="https://twitter.com/Sr_Matheus_A"
+                className="flex justify-center items-center gap-2"
+              >
+                <Image src={twitter} alt="" className="w-[48px] h-[48px]" />{" "}
+                Twitter
+              </a>
             </button>
             <button className="border border-zinc-800 rounded-full p-1  flex gap-3 justify-center items-center ">
-              <Image src={instagram} alt="" className="w-[48px] h-[48px]" />{" "}
-              instagram
+              <a
+                href="https://www.instagram.com/sr_ma_alexandre/"
+                className="flex justify-center items-center gap-2"
+              >
+                <Image src={instagram} alt="" className="w-[48px] h-[48px]" />{" "}
+                Instagram
+              </a>
             </button>
-            {/*  <button className="border rounded-full p-3 ">
-              <Image src={facebook} /> facebook
-            </button> */}
+            <button className="border border-zinc-800 rounded-full p-1  flex gap-3 justify-center items-center ">
+              <a
+                href="https://www.facebook.com/profile.php?id=61550196061252"
+                className="flex justify-center items-center gap-2"
+              >
+                <Image src={facebook} alt="" className="w-[48px] h-[48px]" />{" "}
+                Facebook
+              </a>
+            </button>
           </div>
         </div>
       </div>
